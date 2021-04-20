@@ -92,34 +92,34 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
 
-// /* Scale the cv when usee want donwload the CV */
-// function scaleCv() {
-//   document.body.classList.add('scale-cv');
-// }
+/* Scale the cv when usee want donwload the CV */
+function scaleCv() {
+  document.body.classList.add('scale-cv');
+}
 
-// //when user downloaded the cv remove the scall class
-// function removeScale() {
-//   document.body.classList.remove('scale-cv');
-// }
+//when user downloaded the cv remove the scall class
+function removeScale() {
+  document.body.classList.remove('scale-cv');
+}
 
-// /* Generate PDF */
-// let resumeButton = document.getElementById('resume-button');
-// let areaCv = document.getElementById('area-cv');
+/* Generate PDF */
+let resumeButton = document.getElementById('resume-button');
+let areaCv = document.getElementById('area-cv');
 
-// let pdfFormate = {
-//   margin: 0,
-//   filename: '周义明(前端开发).pdf',
-//   html2canvas: { scale: 4 },
-//   jsPDF: { format: 'a4' },
-// };
+let pdfFormate = {
+  margin: 0,
+  filename: '周义明(前端开发).pdf',
+  html2canvas: { scale: 4 },
+  jsPDF: { format: 'a4' },
+};
 
-// function generateResume() {
-//   html2pdf(areaCv, pdfFormate);
-// }
+function generateResume() {
+  html2pdf(areaCv, pdfFormate);
+}
 
-// resumeButton.addEventListener('click', () => {
-//   scaleCv();
-//   generateResume();
+resumeButton.addEventListener('click', () => {
+  scaleCv();
+  generateResume();
 
-//   setTimeout(removeScale, 5000);
-// });
+  setTimeout(removeScale, 5000);
+});

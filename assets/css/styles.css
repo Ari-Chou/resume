@@ -410,6 +410,11 @@ img {
 }
 
 /* MEDIA */
+@media screen and (max-width: 960px) {
+  .generate-pdf {
+    display: none;
+  }
+}
 @media screen and (min-width: 968px) {
   body {
     margin: 3rem 0;
